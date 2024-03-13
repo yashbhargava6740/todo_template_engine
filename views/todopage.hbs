@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{#each todos}} 
+    <ul class="todos">
+        <li>{{this.title}}</li>
+        <li>{{this.description}}</li>
+        <button><a href = "/api/v1/updateTodo/{{this.todoid}}">Update</a></button>
+        <button><a href = "/api/v1/deleteTodo/{{this.todoid}}">Delete</a></button>
+    </ul>
+    {{/each}}
+</body>
+</html>

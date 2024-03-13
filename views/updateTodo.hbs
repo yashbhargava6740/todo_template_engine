@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "/api/v1/updateTodo1" method = "post">
+        <input placeholder="title" type = "text" name = "title" value = {{todo.title}}>
+        <input placeholder="description" type = "text" name = "description" value = {{todo.description}}>
+        <input type = "hidden" name = "todoid" value = {{todo.todoid}}>
+        <button>Update</button>
+    </form>
+</body>
+</html>
